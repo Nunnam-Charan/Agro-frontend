@@ -21,7 +21,7 @@ const AdminDashboard = () => {
 
   const updateEventHandle = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/updateProduct/${id}`, {
+      const response = await fetch(`https://agro-zc8x.onrender.com/api/updateProduct/${id}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -44,7 +44,7 @@ const AdminDashboard = () => {
 
   const deleteEventHandle = async (id) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/deleteProduct/${id}`, {
+      const response = await fetch(`https://agro-zc8x.onrender.com/api/deleteProduct/${id}`, {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",
@@ -64,7 +64,7 @@ const AdminDashboard = () => {
 
   const getProducts = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/getProducts", {
+      const response = await fetch("https://agro-zc8x.onrender.com/api/getProducts", {
         method: "GET",
         headers: {
           'Content-Type': 'application/json',
