@@ -13,7 +13,7 @@ const ViewOrder = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/getAllorders", {
+      const response = await fetch("https://agro-zc8x.onrender.com/api/getAllorders", {
         method: "GET",
         headers: {
           'Content-Type': 'application/json',
@@ -34,7 +34,7 @@ const ViewOrder = () => {
 
   const updateStatus = async (id, orderStatus) => {
     try {
-      const response = await fetch(`http://localhost:5000/api/upateStatus/${id}`, {
+      const response = await fetch(`https://agro-zc8x.onrender.com/api/upateStatus/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
