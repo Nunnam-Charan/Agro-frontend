@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import './index.css';
 
@@ -85,9 +85,9 @@ const Login = (props) => {
         <div className="register-link-container">
           <p>
             Don't have an account?{' '}
-            <a href="/register" className="register-link">
+            <Link to="/register" className="register-link">
               Register here
-            </a>
+            </Link>
           </p>
         </div>
       </form>
