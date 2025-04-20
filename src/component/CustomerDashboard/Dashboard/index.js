@@ -32,7 +32,7 @@ const CustomerDashboard = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:5000/api/newOrder", {
+      const response = await fetch("https://agro-zc8x.onrender.com/api/newOrder", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -60,7 +60,7 @@ const CustomerDashboard = () => {
 
   const getProducts = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/getProducts", {
+      const response = await fetch("https://agro-zc8x.onrender.com/api/getProducts", {
         method: "GET",
         headers: {
           'Content-Type': 'application/json',
