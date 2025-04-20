@@ -1,0 +1,74 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #fffde7);
+    padding: 20px;
+  }
+  
+  .login-form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #00796b;
+  }
+  
+  .login-input {
+    margin-bottom: 15px;
+    padding: 12px 16px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .login-input:focus {
+    border-color: #00796b;
+  }
+  
+  .login-button {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #004d40;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .login-form {
+      padding: 20px;
+    }
+  
+    .login-title {
+      font-size: 24px;
+    }
+  
+    .login-input,
+    .login-button {
+      font-size: 14px;
+      padding: 10px 14px;
+    }
+  }
+  

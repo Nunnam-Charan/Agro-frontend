@@ -1,0 +1,53 @@
+/* Container for the entire orders section */
+.your-order-container {
+    padding: 20px;
+  }
+  
+  /* Title of the page */
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Card container for each order */
+  .order-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Flex container for the order details */
+  .order-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  /* Styling for each individual detail block */
+  .order-detail {
+    flex: 1;
+    margin-bottom: 10px;
+    padding-right: 10px;
+  }
+  
+  /* Ensure that the text is aligned properly and space is distributed well */
+  .order-detail p {
+    margin: 0;
+  }
+  
+  /* Make sure the order details stack on smaller screens */
+  @media (max-width: 768px) {
+    .order-details {
+      flex-direction: column;
+    }
+  
+    .order-detail {
+      flex: none;
+      margin-bottom: 15px;
+      padding-right: 0;
+    }
+  }
+  
