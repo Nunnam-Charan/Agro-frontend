@@ -12,7 +12,7 @@ const YourOrder = () => {
 
   const fetchOrders = async () => {
     try {
-      const response = await fetch('http://localhost:5000/api/getYourOrders', {
+      const response = await fetch('https://agro-zc8x.onrender.com/api/getYourOrders', {
         headers: {
           'Content-Type': 'application/json',
           'authorization': `Bearer ${token}`,
