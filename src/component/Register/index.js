@@ -7,7 +7,7 @@ const Register = (props) => {
   const [password, setPassword] = useState('');
   const [mail, setMail] = useState('');
   const [mobileNumber, setMobileNumber] = useState('');
-  const [role, setRole] = useState('');
+  const [role, setRole] = useState('customer');
   const navigate = useNavigate();
 
   const handleFormSubmission = async (e) => {
