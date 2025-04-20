@@ -24,7 +24,7 @@ const Login = (props) => {
     setLoading(true); // Start loading
 
     try {
-      const response = await fetch('http://localhost:5000/api/login', {
+      const response = await fetch('https://agro-zc8x.onrender.com/api/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
