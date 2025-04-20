@@ -25,7 +25,7 @@ const AddProduct = () => {
     e.preventDefault();
     const token = cookie.get('token');
     try {
-      const response = await fetch('http://localhost:5000/api/addProduct', {
+      const response = await fetch('https://agro-zc8x.onrender.com/api/addProduct', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
